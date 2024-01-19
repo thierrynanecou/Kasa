@@ -1,0 +1,28 @@
+.banniere {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 65px auto;
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .banniere-content {
+    width: 100%;
+    display: flex;
+
+    .banniere-title {
+      position: absolute;
+      top: 47%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: Montserrat;
+      font-size: 38px;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.Error-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  padding: 70px;
+  color:#ff6060;
+
+  .Error-page-title {
+    color: #ff6060;
+    font-family: "Montserrat";
+    font-size: 288px;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .Error-page-subtitle {
+    color: #ff6060;
+    font-family: "Montserrat";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .Error-page-link {
+    color: #ff6060;
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    text-decoration-line: underline;
+    margin-bottom: 20px;
+  }
+}

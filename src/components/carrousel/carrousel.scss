@@ -1,0 +1,36 @@
+.carrousel {
+    margin: 0;
+    height: 415px;
+    width: 100%;
+    position: relative;
+}
+
+.picture {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.arrow-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.previous-arrow {
+    left: 10px;
+}
+
+.next-arrow {
+    right: 10px;
+}
+
+.numbers {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

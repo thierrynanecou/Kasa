@@ -1,0 +1,37 @@
+.cards-container {
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding: 55px 50px;
+    margin-bottom: 46px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    width: 1240px;
+    margin: 0 auto;
+    
+}
+
+.logement {
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+}
+
+.logement img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.logement h2 {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-family: Montserrat;
+}

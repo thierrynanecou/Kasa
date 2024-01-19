@@ -1,0 +1,152 @@
+/* Details infos appartement */
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Titre et tags */
+.tag-title {
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+
+.title h1 {
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0;
+}
+
+.title h2 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* host de l'appartement et étoiles */
+.stars-name {
+    margin-top: 24px;
+}
+
+.host-name {
+    color: #FF6060;
+    font-size: 18px;
+}
+
+.host-name-picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.host-picture {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+}
+
+/* Collapse description et equipements */
+.collapse-logement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 320px;
+}
+
+.description-logement, .equipments-logement {
+    width: 45%;
+}
+
+.collapse-title {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.collapse-description {
+    color: #FF6060;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.list-equipement {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.equipements {
+    list-style: none;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+    .details {
+        flex-direction: column;
+    }
+
+    /* Titre et tag */
+    .tag-title {
+        margin-top: 15px;
+    }
+
+    .title h1 {
+        font-size: 18px;
+    }
+
+    .title h2 {
+        font-size: 14px;
+    }
+
+    /* Host et étoiles */
+    .host-name {
+        font-size: 12px;
+        align-self: flex-start;
+    }
+
+    .host-picture {
+        height: 32px;
+        width: 32px;
+    }
+
+    .stars-name {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 16px;
+        justify-content: space-between;
+    }
+
+    .host-name-picture {
+        align-items: center;
+    }
+
+    /* Collapse */
+    .collapse-logement {
+        flex-direction: column;
+        margin-bottom: 65px;
+    }
+
+    .description-logement, .equipments-logement {
+        width: 100%;
+    }
+
+    .collapse-title {
+        font-size: 13px;
+    }
+
+    .collapse-description {
+        font-size: 12px
+    }
+
+    .equipements {
+        font-size: 12px;
+    }
+}
