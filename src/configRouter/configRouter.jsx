@@ -16,8 +16,8 @@ const ConfigRouter = () => (
             <Route path ="*" element={<Error />} />
             <Route path ="/" element={<Accueil />} />
             <Route path ="/about" element={<About />} />
-            <Route path ="/logement" element={<Logement />} />
-       
+            <Route path ="/logement/:id" element={<Logement />} />
+            
         </Routes>
         <Footer />
     </Router>

@@ -1,62 +1,53 @@
 .collapse {
-  margin-left: 20%;
-  margin-bottom: 0 auto;
+  margin: 20px 550px 20px 550px;
   display: flex;
   flex-direction: column;
 
-  .collapse-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    
-  }
+  @media only screen and (max-width: 767px) {
+    margin: 20px 20px;
 
-  .collapse-title-container {
-    max-width: 1240px;
-    background-color: #ff6060;
-    border-radius: 5px;
-    margin-bottom: 30px;
-  }
+    .collapse-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-  .collapse-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 18px;
-    margin-left: 18px;
-    height: 52px;
-    color: white;
-    font-size: 32px;
-    font-weight: 500;
-  }
+    .collapse-title-container {
+      background-color: #ff6060;
+      border-radius: 5px 5px 0 0;
+      margin-bottom: 10px;
+    }
 
-  .arrow-icon {
-    width: 24px;
-    height: auto;
-  }
+    .collapse-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 18px;
+      height: 52px;
+      color: white;
+      font-size: 24px;
+      font-weight: 500;
+    }
 
-  .arrow-up {
-    transform: rotate(180deg);
-  }
+    .arrow-icon {
+      width: 24px;
+      height: auto;
+    }
 
-  .collapse-description {
-    width: 1240px;
-    color: #ff6060;
-    background-color: #f6f6f6;
-    padding: 30px 0;
-    margin: 0px;
-    font-family: Montserrat;
-    font-size: 20px;
-    position: relative;
-    top: -30px;
-    display: flex;
-    align-items: center;
-    border-radius: 10px 10px 5px 5px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 142.6%;
-    
+    .arrow-up {
+      transform: rotate(180deg);
+    }
+
+    .collapse-description {
+      color: #ff6060;
+      background-color: #f6f6f6;
+      padding: 20px;
+      margin: 0;
+      font-family: Montserrat;
+      font-size: 16px;
+      position: relative;
+      top: -10px;
+      border-radius: 0 0 5px 5px;
+    }
   }
 }
