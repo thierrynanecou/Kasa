@@ -7,7 +7,7 @@ import aboutJson from '../../data/about.json';
 
 const About = () => {
   return (
-    <div>
+    <div className="container-about">
       <Banniere img={img}/>
       
       <section className="collapse">

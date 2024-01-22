@@ -1,14 +1,24 @@
+.container-logement{
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+
 /* Details infos appartement */
 .details {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+   
 }
 
 /* Titre et tags */
 .tag-title {
     margin-top: 30px;
     margin-bottom: 24px;
+   
 }
 
 .title h1 {
@@ -61,12 +71,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 320px;
+    
    
 }
 
 .description-logement, .equipments-logement {
     width: 45%;
+    margin: 0 auto
 }
 
 .collapse-title {
@@ -82,10 +93,12 @@
 }
 
 .collapse-description {
-    padding: 43px 20px 19px 20px;
+    padding: 20px ;
     color: #FF6060;
     font-weight: 400;
     font-size: 18px;
     background-color: #F6F6F6;
     line-height: 142.6%;
+    font-family: Montserrat;
+    font-style: normal;
 }

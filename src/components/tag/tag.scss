@@ -2,6 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 10px;
+
+    @media screen and (max-width: 767px) {
+        justify-content: center; /* Centre les tags pour des écrans plus petits */
+    }
 }
 
 .tag {
@@ -12,4 +16,9 @@
     padding: 3px 10px;
     margin-right: 10px;
     margin-bottom: 5px;
+
+    @media screen and (max-width: 767px) {
+        margin-right: 5px; /* Ajuste la marge à droite pour des écrans plus petits */
+        margin-bottom: 5px; /* Ajuste la marge en bas pour des écrans plus petits */
+    }
 }

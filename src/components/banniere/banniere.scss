@@ -3,7 +3,6 @@
   width: 100%;
   max-width: 1440px;
   margin: 50px auto;
-
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -23,6 +22,21 @@
       font-size: 38px;
       font-weight: 500;
       margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 20px auto;
+
+    .banniere-content {
+      flex-direction: column;
+
+      .banniere-title {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px; /* Ajuste la taille du titre pour des écrans plus petits */
+      }
     }
   }
 }

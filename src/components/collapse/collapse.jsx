@@ -10,18 +10,18 @@ const Collapse = ({ title, content }) => {
 
   return (
     <div className="collapse-container">
-      <div className="collapse-title-container">
+      
         <div className="collapse-title" onClick={toggleCollapse}>
-          {title}
+          <h2>{title}</h2>
           <img
             src={vector}
-            className={`arrow-icon ${isOpen ? "arrow-up" : ""}`}
+            className={ isOpen ? "arrow-icon arrow-up" : "arrow-icon"}
             alt="vector haut"
           />
         </div>
-        </div>
+        
           
-            {isOpen && <div className="collapse-description">{content}</div>}
+            {isOpen && <div className="collapse-description">{typeof(content)=="object"?content.map((data) =>(<li>{data}</li>)):content} </div>}
           
         
       

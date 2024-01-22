@@ -5,32 +5,7 @@ import logementsData from "../../data/logements.json";
 import Tag from "../../components/tag/tag";
 import Rating from "../../components/rating/rating";
 import { useNavigate, useParams } from "react-router-dom";
-import vector from "../../assets/Vector haut.png";
-
-const Collapse = ({ title, content }) => {
-  const [isOpen, setOpen] = useState(false);
-
-  const toggleCollapse = () => {
-    setOpen(!isOpen);
-  };
-
-  return (
-    <div className="collapse-container">
-      <div className="collapse-title-container">
-        <div className="collapse-title" onClick={toggleCollapse}>
-          {title}
-          <img
-            src={vector}
-            className={`arrow-icon ${isOpen ? "arrow-up" : ""}`}
-            alt="vector haut"
-          />
-        </div>
-      </div>
-
-      {isOpen && <div className="collapse-description">{content}</div>}
-    </div>
-  );
-};
+import Collapse from "../../components/collapse/collapse";
 
 const Logement = () => {
   const { id } = useParams();
@@ -44,7 +19,7 @@ const Logement = () => {
   }, [data, navigate]);
 
   return (
-    <div>
+    <div className="container-logement">
       <Carrousel images={data.pictures} />
 
       <div className="details">

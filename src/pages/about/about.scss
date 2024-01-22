@@ -1,3 +1,15 @@
+.container-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+  min-height: 65vh;
+.collapse{
+  width: 85%;
+}
+}
+
 .banniere-content {
   border-radius: 25px;
   position: relative;
