@@ -45,6 +45,9 @@
 /* host de l'appartement et étoiles */
 .stars-name {
     margin-top: 24px;
+    display: flex;
+    flex-direction: column;  /* Ajustement à une disposition en colonne pour les petits écrans */
+    align-items: center;
 }
 
 .host-name {
@@ -101,4 +104,70 @@
     line-height: 142.6%;
     font-family: Montserrat;
     font-style: normal;
+}
+/* ... Votre CSS existant ... */
+
+@media (max-width: 767px) {
+    .details {
+        flex-direction: column;
+    }
+
+    /* Titre et tag */
+    .tag-title {
+        margin-top: 15px;
+    }
+
+    .title h1 {
+        font-size: 18px;
+    }
+
+    .title h2 {
+        font-size: 14px;
+    }
+
+    /* Host et étoiles */
+    .host-name {
+        font-size: 22px;
+        align-self: flex-start;
+    }
+
+    .host-picture {
+        height: 32px;
+        width: 32px;
+    }
+
+    .stars-name {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 16px;
+        justify-content: space-between;
+    }
+
+    .host-name-picture {
+        align-items: center;
+    }
+
+    /* Collapse */
+    .collapse-logement {  /* Correction ici pour utiliser la bonne classe */
+        flex-direction: column;
+        margin-bottom: 65px;
+    }
+
+    .description-logement, .equipments-logement {  /* Correction ici pour utiliser la bonne classe */
+        width: 100%;
+    }
+
+    .collapse-title {
+        font-size: 13px;
+    }
+
+    .collapse-description {
+        font-size: 12px;
+    }
+
+    .equipments-logement {  /* Correction ici pour utiliser la bonne classe */
+        font-size: 12px;
+    }
 }

@@ -3,9 +3,7 @@
     flex-wrap: wrap;
     margin-top: 10px;
 
-    @media screen and (max-width: 767px) {
-        justify-content: center; /* Centre les tags pour des écrans plus petits */
-    }
+    
 }
 
 .tag {

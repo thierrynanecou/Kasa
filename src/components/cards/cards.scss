@@ -34,3 +34,10 @@
     margin: 20px;
     font-family: Montserrat;
 }
+
+@media screen and (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+        width: 355px;
+    }
+}
