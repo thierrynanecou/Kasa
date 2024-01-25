@@ -5,11 +5,11 @@ import logo from './../../assets/LOGO blanc.png';
 const Footer = () => {
     return (
         <footer className="footer-container">
-            <div class="footer-logo">
+            <div className="footer-logo">
             <img src={logo} alt="kasa-logo" />
             </div>
             
-            <p class="footer-text">© 2020 Kasa. Tous droits réservés</p>
+            <p className="footer-text">© 2020 Kasa. Tous droits réservés</p>
         </footer>
     );
 }
