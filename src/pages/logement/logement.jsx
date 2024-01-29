@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./logement.scss";
 import Carrousel from "../../components/carrousel/carrousel";
 import logementsData from "../../data/logements.json";
 import Tag from "../../components/tag/tag";
 import Rating from "../../components/rating/rating";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Collapse from "../../components/collapse/collapse";
+import Error from "../../pages/error/error";
 
 const Logement = () => {
   const { id } = useParams();
   const data = logementsData.find((data) => data.id === id);
-  const navigate = useNavigate();
+  
+ if (!data) {
+   return (<Error />)
+ };
 
-  useEffect(() => {
-    if (!data) {
-      navigate("*");
-    }
-  }, [data, navigate]);
+ 
 
   return (
     <div className="container-logement">
