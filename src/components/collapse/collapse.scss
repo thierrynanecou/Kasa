@@ -29,7 +29,7 @@
         }
 
         .arrow-up {
-          transform: rotate(180deg);
+          animation: rotatearrow .3s forwards;
           
         }
       }
@@ -45,6 +45,26 @@
       position: relative;
       top: -10px;
       border-radius: 0 0 5px 5px;
+      height: 100%;
+      
+    }
+    .showdescription{
+      animation: showdesc 5s;
     }
   }
-
+@keyframes rotatearrow  {
+from {
+  transform: rotate(0);
+}
+to {
+  transform: rotate(-180deg);
+}
+}
+@keyframes showdesc  {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}

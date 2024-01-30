@@ -21,7 +21,7 @@ const Collapse = ({ title, content }) => {
         </div>
         
           
-            {isOpen && <div className="collapse-description">{typeof(content)=="object"?content.map((data) =>(<li>{data}</li>)):content} </div>}
+            {isOpen && <div className="collapse-description showdescription">{typeof(content)=="object"?content.map((data) =>(<li>{data}</li>)):content} </div>}
           
         
       
