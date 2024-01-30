@@ -29,7 +29,7 @@
         }
 
         .arrow-up {
-          animation: rotatearrow .3s forwards;
+          animation: rotatearrow .5s forwards;
           
         }
       }
@@ -49,7 +49,7 @@
       
     }
     .showdescription{
-      animation: showdesc 5s;
+      animation: showdesc .5s forwards;
     }
   }
 @keyframes rotatearrow  {
@@ -62,9 +62,9 @@ to {
 }
 @keyframes showdesc  {
   from {
-    height: 0;
+    transform: scaleY(0);
   }
   to {
-    height: 100%;
+    transform: scaleY(1);
   }
 }
